@@ -8,10 +8,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="max-w-2xl mx-auto">
+      <main className="max-w-2xl mx-auto">
         <HeroCard />
         <Table />
-      </div>
+      </main>
     </div>
   );
 }
