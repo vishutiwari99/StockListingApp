@@ -1,10 +1,8 @@
-import axios from "axios";
 import { useEffect, useState } from "react"
 import { useHistory } from "react-router";
+import axios from "axios";
 import { URL } from "../utils/constants";
 import Table from "./Table";
-
-
 
 const SavedStocks = () => {
     const [savedStocks, setSavedStocks] = useState([]);
@@ -14,7 +12,6 @@ const SavedStocks = () => {
     const deleteStocksHandler = async (id) => {
         await axios.delete(`${URL}${id}`);
         setReload(!reload)
-        // console.log(data)
     }
     useEffect(() => {
         const fetchDBStocks = async () => {
