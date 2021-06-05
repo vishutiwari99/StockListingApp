@@ -3,9 +3,6 @@ import HeroCard from './components/HeroCard';
 import Home from './page/Home';
 import SavedStocks from './page/SavedStocks';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
-
-
 function App() {
   return (
     <div className="App">
