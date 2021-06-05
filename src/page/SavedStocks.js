@@ -10,12 +10,12 @@ const SavedStocks = () => {
     const history = useHistory();
 
     const deleteStocksHandler = async (id) => {
-        await axios.delete(`api/${id}`);
+        await axios.delete(`/api/${id}`);
         setReload(!reload)
     }
     useEffect(() => {
         const fetchDBStocks = async () => {
-            const { data } = await axios.get(URL);
+            const { data } = await axios.get('/api');
             setSavedStocks(data);
         }
         fetchDBStocks();
