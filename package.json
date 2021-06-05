@@ -16,7 +16,7 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
-  "proxy": "https://sleepy-basin-09094.herokuapp.com",
+ 
   "scripts": {
     "start": "craco start",
     "build": "craco build",
@@ -45,5 +45,6 @@
     "autoprefixer": "^9",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
-  }
+  },
+  "proxy": "https://sleepy-basin-09094.herokuapp.com"
 }
