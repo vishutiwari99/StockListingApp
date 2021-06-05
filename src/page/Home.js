@@ -1,8 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { ChevronLeftIcon, ChevronRightIcon, SearchIcon } from '@heroicons/react/solid'
-import Table from './components/Table';
-import { URL } from './utils/constants';
+import Table from '../components/Table';
+import { URL } from '../utils/constants';
 
 const Home = () => {
     const [stocks, setStocks] = useState([]);

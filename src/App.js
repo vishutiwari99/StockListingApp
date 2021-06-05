@@ -1,7 +1,7 @@
 import Header from './components/Header';
 import HeroCard from './components/HeroCard';
-import Home from './Home';
-import SavedStocks from './components/SavedStocks';
+import Home from './page/Home';
+import SavedStocks from './page/SavedStocks';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 

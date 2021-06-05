@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { useHistory } from "react-router";
 import axios from "axios";
 import { URL } from "../utils/constants";
-import Table from "./Table";
+import Table from "../components/Table";
 
 const SavedStocks = () => {
     const [savedStocks, setSavedStocks] = useState([]);
