@@ -15,7 +15,7 @@ const SavedStocks = () => {
     }
     useEffect(() => {
         const fetchDBStocks = async () => {
-            const { data } = await axios.get('/api');
+            const { data } = await axios.get(URL);
             setSavedStocks(data);
         }
         fetchDBStocks();
