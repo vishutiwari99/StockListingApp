@@ -15,7 +15,7 @@ const Table = ({ currentStocks, search, savedStocks, saveStocksHandler, deleteSt
                 </tr>
             </thead>
             <tbody className="text-gray-600 text-sm font-light">
-                {currentStocks.filter((stock) => {
+                {Object.values(currentStocks).filter((stock) => {
                     if (search === undefined) {
                         search = "";
                     }
