@@ -10,7 +10,7 @@ const SavedStocks = () => {
     const history = useHistory();
 
     const deleteStocksHandler = async (id) => {
-        await axios.delete(`/api/${id}`);
+        await axios.delete(`${URL}${id}`);
         setReload(!reload)
     }
     useEffect(() => {
