@@ -19,7 +19,8 @@ const Home = () => {
     console.log("key hai", key);
 
     const fetchStocks = async () => {
-        const { data } = await axios.get(`https://api.nomics.com/v1/currencies/ticker?key=${key}&per-page=100&page=1&interval=1h`);
+        // const { data } = await axios.get(`https://api.nomics.com/v1/currencies/ticker?key=${key}&per-page=100&page=1&interval=1h`);
+        const data = await require('../utils/StocksData.json')
         setStocks(data);
     }
     const fetchDBStocks = async () => {
