@@ -37,7 +37,7 @@ const Home = () => {
 
 
     const saveStocksHandler = async (stock) => {
-        const res = await axios.post(`${URL}save`, stock);
+        await axios.post(`${URL}save`, stock);
         setLoading(!loading);
     }
 
